@@ -1057,6 +1057,55 @@
             color: var(--gold);
         }
 
+        /* Social icons in footer */
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-list {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.5rem 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0.75rem;
+            color: rgba(255, 251, 245, 0.9);
+            transition: background 0.25s, transform 0.15s;
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .social-link:hover {
+            background: rgba(212, 175, 55, 0.12);
+            transform: translateY(-2px);
+            color: var(--cream);
+        }
+
+        .social-label {
+            font-size: 0.95rem;
+            font-weight: 700;
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            .social-label { display: inline-block; }
+        }
+
         .footer-bottom {
             border-top: 1px solid rgba(255, 251, 245, 0.1);
             padding-top: 2rem;
@@ -1167,7 +1216,7 @@
             <h1 class="animate-fade-up delay-2">منارات <span class="text-gold">النبوّة</span></h1>
             
             <p class="hero-description animate-fade-up delay-3">
-                منارات رائدة وملهمة في إطلاق البرامج والمبادرات النوعية التي ترتقي بالفرد والمجتمع
+                مؤسسة رائدة وملهمة في إطلاق البرامج والمبادرات النوعية التي ترتقي بالفرد والمجتمع
             </p>
             
             <div class="hero-buttons animate-fade-up delay-4">
@@ -1249,7 +1298,7 @@
                     <span class="section-badge">الرؤية</span>
                     <h2 class="section-title">نحو مستقبل <span class="text-accent">مشرق</span></h2>
                     <p class="section-description" style="margin: 0 0 2rem; text-align: right;">
-                        أن تكون منارة رائدة وملهمة في إطلاق المبادرات النوعية التي ترتقي بالفرد والمجتمع وتترك أثراً إيجابياً مستداماً
+                        أن تكون مؤسسة رائدة وملهمة في إطلاق المبادرات النوعية التي ترتقي بالفرد والمجتمع وتترك أثراً إيجابياً مستداماً
                     </p>
                     
                     <div class="vision-list">
@@ -1508,7 +1557,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>منارات النبوّة</h3>
-                    <p>منارات رائدة وملهمة في إطلاق البرامج والمبادرات النوعية التي ترتقي بالفرد والمجتمع وتترك أثراً إيجابياً مستداماً</p>
+                    <p>مؤسسة رائدة وملهمة في إطلاق البرامج والمبادرات النوعية التي ترتقي بالفرد والمجتمع وتترك أثراً إيجابياً مستداماً</p>
                 </div>
                 
                 <div class="footer-links">
@@ -1523,10 +1572,19 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>تواصل معنا</h4>
-                    <ul>
-                        <li><a href="#contact">اتصل بنا</a></li>
-                    </ul>
+                    <h4>مواقع منارات</h4>
+                    <div class="footer-social">
+                        <div class="social-list" role="list">
+                            <a class="social-link" href="https://www.instagram.com/manarat_alnubuwwah?igsh=MXJjanhvZzQxamZhMA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram منارات النبوّة">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm5.3-3.2a1.05 1.05 0 1 0 1.05 1.05A1.05 1.05 0 0 0 17.3 5.3z"/></svg>
+                                <span class="social-label">إنستجرام</span>
+                            </a>
+                            <a class="social-link" href="https://linktr.ee/manarat.alnubuwwah?utm_source=linktree_profile_share&ltsid=7adeda57-988c-4274-bf9c-1b3d0884cde4" target="_blank" rel="noopener noreferrer" aria-label="Linktree منارات النبوّة">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.59 13.41a1 1 0 0 0 1.41 0l1.59-1.59a3 3 0 1 1 4.24 4.24l-3 3a3 3 0 0 1-4.24 0 1 1 0 0 0-1.41 1.41 5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.59 1.59a1 1 0 0 0 0 1.41z"/><path d="M13.41 10.59a1 1 0 0 0-1.41 0L10.41 11.59a3 3 0 1 1-4.24-4.24l3-3a3 3 0 0 1 4.24 0 1 1 0 0 0 1.41-1.41 5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.59-1.59a1 1 0 0 0 0-1.41z"/></svg>
+                                <span class="social-label">مناراتنا</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
